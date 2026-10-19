@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Tower: Idle Defense - Official Landing Page</title>
+  <meta name="description" content="Defend your orbital space tower, upgrade starships, and survive endless alien swarms in this sci-fi idle roguelite tower defense.">
+  <style>
+    :root {
+      --bg: #070b14;
+      --card-bg: rgba(19, 27, 46, 0.85);
+      --border: #1e293b;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --cyan: #38bdf8;
+      --glow: rgba(56, 189, 248, 0.35);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at 50% 20%, #101c3d 0%, var(--bg) 70%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    .hero {
+      max-width: 800px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 3.5rem;
+      margin-bottom: 12px;
+      filter: drop-shadow(0 0 20px var(--glow));
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #fff 40%, var(--cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.tagline {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px 28px;
+      max-width: 680px;
+      margin: 0 auto 30px auto;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+      text-align: left;
+    }
+    .card h2 {
+      font-size: 1.3rem;
+      color: var(--cyan);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .card li {
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #cbd5e1;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .card li:last-child {
+      border-bottom: none;
+    }
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+    .btn-primary {
+      background: var(--cyan);
+      color: #070b14;
+      box-shadow: 0 4px 20px var(--glow);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(56, 189, 248, 0.5);
+    }
+    .btn-secondary {
+      background: #1e293b;
+      color: #fff;
+      border: 1px solid #334155;
+    }
+    .btn-secondary:hover {
+      background: #334155;
+      transform: translateY(-2px);
+    }
+    footer {
+      margin-top: auto;
+      padding-top: 40px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    footer a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="badge">🛰️</div>
+    <h1>Space Tower: Idle Defense</h1>
+    <p class="tagline">The orbital bastion defense game blending deep roguelite strategy, workshop upgrades, and customizable starships.</p>
+
+    <div class="card">
+      <h2>🚀 Key Features</h2>
+      <ul>
+        <li>🛡️ <strong>Automated Combat:</strong> One-thumb vertical gameplay with tactical real-time upgrades.</li>
+        <li>🛠️ <strong>Permanent Workshop:</strong> Reinvest coins & gems across runs to master your tech tree.</li>
+        <li>🐝 <strong>Special Starships:</strong> Fly the Hornet Hive MK-02 with autonomous kamikaze bee drones.</li>
+        <li>🎯 <strong>Dynamic Missions:</strong> 6-hour rotating challenges dynamically tailored to your unlocks.</li>
+        <li>☁️ <strong>Nakama Cloud Sync:</strong> Play offline anywhere, backup your progress seamlessly online.</li>
+      </ul>
+
+      <div class="btn-group">
+        <a href="privacy/" class="btn btn-secondary">🔒 Privacy Policy</a>
+        <a href="https://github.com/Software-Gambit/space-tower" target="_blank" rel="noopener" class="btn btn-primary">⭐ GitHub Project</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 <strong>Software Gambit</strong>. All rights reserved.</p>
+    <p><a href="privacy/">Privacy Policy</a> • <a href="privacy/#deletion">Data Deletion Request</a> • <a href="mailto:contact@softwaregambit.com">Contact Support</a></p>
+  </footer>
+
+</body>
+</html>

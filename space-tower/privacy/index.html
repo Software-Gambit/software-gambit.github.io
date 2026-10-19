@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Space Tower: Idle Defense</title>
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: #131b2e;
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent-cyan: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.25);
+      --border-color: #1e293b;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 36px 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .logo-badge {
+      display: inline-block;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 1.85rem;
+      color: #fff;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .app-meta {
+      font-size: 0.95rem;
+      color: var(--accent-cyan);
+      font-weight: 600;
+    }
+    .effective-date {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+    .lang-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 24px 0 32px 0;
+    }
+    .lang-btn {
+      background: #1e293b;
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .lang-btn:hover {
+      background: #334155;
+    }
+    .lang-btn.active {
+      background: var(--accent-cyan);
+      color: #0b0f19;
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 15px var(--accent-glow);
+    }
+    .lang-content {
+      display: none;
+    }
+    .lang-content.active {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      font-size: 1.35rem;
+      color: var(--accent-cyan);
+      margin: 28px 0 12px 0;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 6px;
+    }
+    h3 {
+      font-size: 1.1rem;
+      color: #fff;
+      margin: 18px 0 8px 0;
+    }
+    p, ul {
+      margin-bottom: 14px;
+      color: var(--text-main);
+    }
+    ul {
+      padding-left: 22px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .highlight-box {
+      background: rgba(56, 189, 248, 0.08);
+      border-left: 4px solid var(--accent-cyan);
+      padding: 14px 18px;
+      border-radius: 0 8px 8px 0;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="logo-badge">🛰️</div>
+      <h1>Space Tower: Idle Defense</h1>
+      <div class="app-meta">Software Gambit • Package: com.softwaregambit.spacetower</div>
+      <div class="effective-date">Effective Date: October 19, 2026 / 19 de Octubre de 2026</div>
+
+      <!-- Language Toggle Buttons -->
+      <div class="lang-switcher">
+        <button id="btn-en" class="lang-btn active" onclick="switchLanguage('en')">🇺🇸 English</button>
+        <button id="btn-es" class="lang-btn" onclick="switchLanguage('es')">🇲🇽 Español</button>
+      </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- ENGLISH SECTION                            -->
+    <!-- ========================================== -->
+    <div id="content-en" class="lang-content active">
+      <h2>1. Introduction</h2>
+      <p>Software Gambit ("we", "our", or "us") operates <strong>Space Tower: Idle Defense</strong> (the "Game"). This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application on Android and iOS platforms.</p>
+      <p>By downloading, installing, or playing the Game, you agree to the collection and use of information in accordance with this policy.</p>
+
+      <h2>2. Information We Collect</h2>
+      <h3>A. Information Collected Automatically</h3>
+      <ul>
+        <li><strong>Device Identifiers & Technical Data:</strong> Anonymous Device IDs, operating system version, device model, and IP address for session authentication, cloud saves, and fraud prevention.</li>
+        <li><strong>Gameplay Data & Telemetry:</strong> Wave records, battle stats, workshop upgrades, and virtual in-game currencies (Coins & Gems) synced to our cloud server (Nakama).</li>
+        <li><strong>Advertising Identifiers:</strong> Google Advertising ID (GAID) or Apple IDFA used to serve in-game advertisements through Google AdMob.</li>
+      </ul>
+
+      <h3>B. Information You Provide Voluntarily</h3>
+      <ul>
+        <li><strong>Pilot Name & Profile Avatar:</strong> You may customize an in-game alias and avatar. No real-world personally identifiable information (real names, physical addresses, or phone numbers) is requested or stored.</li>
+        <li><strong>Support Communications:</strong> Direct emails sent to us for customer support or bug reporting.</li>
+      </ul>
+
+      <h2>3. How We Use Your Information</h2>
+      <p>We use the collected information solely to:</p>
+      <ul>
+        <li>Provide, maintain, and optimize gameplay mechanics and balance.</li>
+        <li>Synchronize player game saves seamlessly via our cloud backend (Nakama) to prevent progress loss.</li>
+        <li>Manage global achievements, leaderboards, and rotating 6-hour dynamic missions.</li>
+        <li>Deliver rewarded video ads through Google AdMob.</li>
+        <li>Process future in-app purchases (Gems and Season Passes) securely through Google Play Billing.</li>
+        <li>Detect unauthorized client modifications and protect server integrity.</li>
+      </ul>
+
+      <h2>4. Third-Party Services</h2>
+      <p>Our game integrates trusted third-party providers with their own privacy policies:</p>
+      <ul>
+        <li><strong>Google Play Services & Google AdMob:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li><strong>Nakama (Heroic Labs):</strong> <a href="https://heroiclabs.com/privacy/" target="_blank" rel="noopener">Heroic Labs Privacy Policy</a></li>
+      </ul>
+      <p>We do not sell, rent, or trade your personal information to third parties for monetary gain.</p>
+
+      <h2>5. Children's Privacy (COPPA Compliance)</h2>
+      <p>Space Tower is designed for a general audience aged 10 and above. We do not knowingly collect personal identifiable information from children under 13 (or under 16 in the European Union). If you become aware that a child has provided us with personal information, please contact us immediately.</p>
+
+      <h2>6. Data Retention & Account Deletion (Right to be Forgotten)</h2>
+      <div class="highlight-box">
+        <strong>Data Deletion Request:</strong> You can request the permanent deletion of your player profile, cloud saves, and stored history at any time by sending an email to <strong>contact@softwaregambit.com</strong> with your in-game Pilot Name or Device ID.
+      </div>
+
+      <h2>7. Contact Us</h2>
+      <p>If you have any questions or feedback regarding this Privacy Policy, please reach out to us at:</p>
+      <p>📧 Email: <a href="mailto:contact@softwaregambit.com">contact@softwaregambit.com</a><br>
+      🌐 GitHub: <a href="https://github.com/Software-Gambit/space-tower" target="_blank" rel="noopener">github.com/Software-Gambit/space-tower</a></p>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- SPANISH SECTION                            -->
+    <!-- ========================================== -->
+    <div id="content-es" class="lang-content">
+      <h2>1. Introducción</h2>
+      <p>Software Gambit ("nosotros" o "nuestro") opera <strong>Space Tower: Idle Defense</strong> (el "Juego"). Esta Política de Privacidad explica cómo recopilamos, utilizamos y protegemos su información al utilizar nuestra aplicación móvil en las plataformas Android e iOS.</p>
+      <p>Al descargar, instalar o jugar el Juego, usted acepta la recopilación y uso de información de acuerdo con esta política.</p>
+
+      <h2>2. Información que recopilamos</h2>
+      <h3>A. Información recopilada automáticamente</h3>
+      <ul>
+        <li><strong>Identificadores del dispositivo y datos técnicos:</strong> IDs de dispositivo anónimos, versión del sistema operativo, modelo de teléfono y dirección IP con fines de autenticación, guardado en la nube y prevención de trampas.</li>
+        <li><strong>Datos de juego y telemetría:</strong> Récords de oleadas, estadísticas de combate, mejoras del taller, saldo de monedas y gemas virtuales sincronizadas con nuestro servidor seguro Nakama.</li>
+        <li><strong>Identificadores publicitarios:</strong> ID de publicidad de Google (GAID) o IDFA de Apple para servir anuncios mediante Google AdMob.</li>
+      </ul>
+
+      <h3>B. Información proporcionada voluntariamente</h3>
+      <ul>
+        <li><strong>Nombre de piloto y avatar:</strong> Nombre ficticio dentro del juego. No solicitamos ni almacenamos nombres reales, direcciones físicas, números de teléfono ni datos bancarios.</li>
+        <li><strong>Comunicaciones de soporte:</strong> Correos electrónicos enviados a nuestro equipo para soporte o reporte de errores.</li>
+      </ul>
+
+      <h2>3. Uso de la Información</h2>
+      <p>Utilizamos la información recopilada exclusivamente para:</p>
+      <ul>
+        <li>Proveer, mantener y optimizar el funcionamiento y balance del juego.</li>
+        <li>Sincronizar el guardado en la nube en Nakama para evitar pérdida de progreso al cambiar de dispositivo.</li>
+        <li>Gestionar clasificaciones, logros y rotación de misiones dinámicas cada 6 horas.</li>
+        <li>Mostrar anuncios bonificados mediante Google AdMob.</li>
+        <li>Procesar compras integradas futuras (Gemas y Pase de Temporada) de forma segura con Google Play Billing.</li>
+        <li>Prevenir trampas o manipulaciones no autorizadas del cliente.</li>
+      </ul>
+
+      <h2>4. Proveedores de Terceros</h2>
+      <p>El Juego integra servicios de terceros que recopilan datos técnicos bajo sus propias políticas:</p>
+      <ul>
+        <li><strong>Google Play Services y Google AdMob:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a></li>
+        <li><strong>Nakama (Heroic Labs):</strong> <a href="https://heroiclabs.com/privacy/" target="_blank" rel="noopener">Política de Privacidad de Heroic Labs</a></li>
+      </ul>
+      <p>Nosotros no vendemos ni alquilamos su información personal a terceros.</p>
+
+      <h2>5. Privacidad de Menores</h2>
+      <p>Space Tower está diseñado para un público general a partir de los 10 años. No recopilamos conscientemente información de niños menores de 13 años. Si cree que un menor nos ha provisto datos, contáctenos para eliminarlos inmediatamente.</p>
+
+      <h2>6. Retención y Eliminación de Datos (Derecho al Olvido)</h2>
+      <div class="highlight-box">
+        <strong>Solicitud de Eliminación de Cuenta:</strong> Cualquier jugador puede solicitar la eliminación total y permanente de su perfil en la nube y estadísticas en cualquier momento escribiendo a <strong>contact@softwaregambit.com</strong> indicando su Nombre de Piloto o Device ID.
+      </div>
+
+      <h2>7. Contacto</h2>
+      <p>Si tiene dudas sobre esta Política de Privacidad, comuníquese con nosotros en:</p>
+      <p>📧 Correo: <a href="mailto:contact@softwaregambit.com">contact@softwaregambit.com</a><br>
+      🌐 Repositorio: <a href="https://github.com/Software-Gambit/space-tower" target="_blank" rel="noopener">github.com/Software-Gambit/space-tower</a></p>
+    </div>
+
+    <footer>
+      © 2026 Software Gambit. All rights reserved / Todos los derechos reservados.
+    </footer>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      document.getElementById('content-en').classList.remove('active');
+      document.getElementById('content-es').classList.remove('active');
+      document.getElementById('btn-en').classList.remove('active');
+      document.getElementById('btn-es').classList.remove('active');
+
+      if (lang === 'es') {
+        document.getElementById('content-es').classList.add('active');
+        document.getElementById('btn-es').classList.add('active');
+      } else {
+        document.getElementById('content-en').classList.add('active');
+        document.getElementById('btn-en').classList.add('active');
+      }
+    }
+
+    // Auto-detect browser language
+    (function() {
+      var userLang = navigator.language || navigator.userLanguage;
+      if (userLang && userLang.toLowerCase().startsWith('es')) {
+        switchLanguage('es');
+      }
+    })();
+  </script>
+</body>
+</html>
